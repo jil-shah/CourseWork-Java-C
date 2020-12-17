@@ -12,12 +12,11 @@ public class Point {
 	}
 	
 	public void setPoint(int x, int y){
-    this.x = x;
-    this.y= y;
-  }
+	        this.x = x;
+	        this.y= y;
+	}
 	public double distanceTo(Point that){
-		double d = Math.pow(x-that.x,2) + Math.pow(y-that.y,2); 
-	   
+		double d = Math.pow(x-that.x,2) + Math.pow(y-that.y,2);
 		return Math.sqrt(d);  
 	}
 		
