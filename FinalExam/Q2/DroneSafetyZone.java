@@ -19,9 +19,7 @@ which takes as input an array of Circle objects and returns a String as follows:
 	
 public class DroneSafetyZone{
 
-	
-	
-	public String SafetyAlert(MyCircle[] swarm){
+ public String SafetyAlert(MyCircle[] swarm){
     int flagIntersect = 0;
     int flagTang =0;
     for (int i=0; i<swarm.length;i++){
@@ -52,6 +50,6 @@ public class DroneSafetyZone{
     else if (flagTang>0 && flagIntersect==0){
       return "Yellow";    
     }
-		return "Green";
-	}	
+    return "Green";
+ }	
 }
