@@ -14,6 +14,7 @@ Is ablle to represent arbitrary large integer numbers. Implementation of arithme
 
 * Run time for the code is:
 
+<img src="https://render.githubusercontent.com/render/math?math= {T(n)= +\theta}(n)">
 $$ T(n) = \{\theta(n)} $$
 
 ### Implementation-of-Sets-using-LinkedLists
