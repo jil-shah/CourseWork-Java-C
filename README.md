@@ -12,10 +12,8 @@ Is ablle to represent arbitrary large integer numbers. Implementation of arithme
 * CompareTo: compare two large integers to determine the bigger integer with signs.
 * Multiplication: using the karatsuba algorithm (recursive and base case is multiplying two one-digit numbers).
 
-* Run time for the code is:
+* Run time for the code is: <img src="https://render.githubusercontent.com/render/math?math={T(n)=+\theta}(n)">
 
-<img src="https://render.githubusercontent.com/render/math?math= {T(n)= +\theta}(n)">
-$$ T(n) = \{\theta(n)} $$
 
 ### Implementation-of-Sets-using-LinkedLists
 Implement sets of integers using singly linked lists. The elements in the set must be stored in a singly linked list in increasing order. The java class will always be sorted after each method:
