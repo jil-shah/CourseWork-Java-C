@@ -7,17 +7,15 @@ public class HugeIntegerTiming {
     BigInteger n1,n2,n3;
     long Ti,Tf;
     double runTime = 0.0;
-    int maxNumInt = 4500, maxRunTime = 500,compare;
-    int n=50;
+    int maxNumInt = 450, maxRunTime = 500,compare;
+    int n = 50;
 
     for (int numInts=0; numInts<maxNumInt; numInts++) {
       huge1 = new HugeInteger(n);
       huge2 = new HugeInteger(n);
-      n1 = new BigInteger(huge1.toString());
-      n2 = new BigInteger(huge2.toString());
       Ti = System.currentTimeMillis();
       for (int j=0; j<maxRunTime;j++) {
-        n3 = n1.add(n2);
+        huge3 = huge1.add(huge2);
       }
       Tf = System.currentTimeMillis();
       runTime += (double)(Tf-Ti)/((double)maxRunTime);    
@@ -45,11 +43,9 @@ public class HugeIntegerTiming {
     for (int numInts=0; numInts<maxNumInt; numInts++) {
       huge1 = new HugeInteger(n);
       huge2 = new HugeInteger(n);
-      n1 = new BigInteger(huge1.toString());
-      n2 = new BigInteger(huge2.toString());
       Ti = System.currentTimeMillis();
       for (int j=0; j<maxRunTime;j++) {
-        n3 = n1.subtract(n2);
+          huge3 = huge1.subtract(huge2);
       }
       Tf = System.currentTimeMillis();
       runTime += (double)(Tf-Ti)/((double)maxRunTime);    
@@ -77,11 +73,9 @@ public class HugeIntegerTiming {
     for (int numInts=0; numInts<maxNumInt; numInts++) {
       huge1 = new HugeInteger(n);
       huge2 = new HugeInteger(n);
-      n1 = new BigInteger(huge1.toString());
-      n2 = new BigInteger(huge2.toString());
       Ti = System.currentTimeMillis();
       for (int j=0; j<maxRunTime;j++) {
-        n3 = n1.multiply(n2);
+          huge3 = huge1.multiply(huge2);
       }
       Tf = System.currentTimeMillis();
       runTime += (double)(Tf-Ti)/((double)maxRunTime);    
